@@ -6,6 +6,14 @@ import {
 } from "@dhis2/ui-core";
 
 const BobReportGenerator = () => {
+    const blueFlashyTextStyle = {
+        fontSize: '36px',
+        fontWeight: 'bold',
+        color: '#0000FF',
+        textShadow: '2px 2px 4px #000000',
+    };
+
+
     const [showSelects, setShowSelects] = useState(false);
     const [selectedOption1, setSelectedOption1] = useState("");
     const [selectedOption2, setSelectedOption2] = useState("");
@@ -20,7 +28,7 @@ const BobReportGenerator = () => {
 
     return (
         <div>
-            <h2>BOB Report Generator</h2>
+            <h2 style={blueFlashyTextStyle}>BOB Report Generator</h2>
             {showSelects ? (
                 <>
                     <div>
@@ -81,9 +89,6 @@ const BobReportGenerator = () => {
 
                     </div>
                 </>
-
-
-
 
             ) : (
                 <div>
